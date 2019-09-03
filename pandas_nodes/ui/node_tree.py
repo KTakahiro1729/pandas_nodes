@@ -1,4 +1,5 @@
 import bpy
+from bpy.props import *
 
 class PandasNodeTree(bpy.types.NodeTree):
     bl_idname = "pn_PandasNodeTree"

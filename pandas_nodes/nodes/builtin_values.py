@@ -1,8 +1,10 @@
 import bpy
 from bpy.props import *
 from .node_template import TemplateNode
+from .. utils import node_utils as nu
 
 class ValueInputTemplateNode(TemplateNode):
+    input_count = nu.input_count(1)
     def code_template(self):
         return self.cast_type + "({inp[0]}),"
 

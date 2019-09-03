@@ -10,7 +10,7 @@ class PN_PT_develpment(bpy.types.Panel):
 
     @classmethod
     def poll(cls, context):
-        tree = ops_utils.getTree()
+        tree = ops_utils.get_tree()
         if tree is None: return False
         return tree.bl_idname == "pn_PandasNodeTree"
     def draw(self, context):
