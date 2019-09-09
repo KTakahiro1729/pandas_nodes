@@ -16,5 +16,5 @@ class PN_PT_develpment(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         col = layout.column(align=True)
-        col.operator("pandas_nodes.execute_pntree", text="Execute Node Tree")
+        col.operator("pandas_nodes.code_from_pntree", text="Generate Code")
 register_class = [PN_PT_develpment]

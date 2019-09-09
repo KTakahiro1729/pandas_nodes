@@ -1,5 +1,5 @@
-from . import ui, nodes, operator
-modules = [ui, nodes, operator]
+from . import ui, nodes, operator, sockets
+modules = [ui, nodes, operator, sockets]
 
 
 import bpy

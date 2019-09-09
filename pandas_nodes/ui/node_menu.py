@@ -56,7 +56,14 @@ class PN_MT_io_menu(MenuTemplate):
     icon = "LINENUMBERS_ON"
     register_nodes = nodes.io.register_class
 
-inner_menues = [PN_MT_builtin_values_menu, PN_MT_basic_math_menu, PN_MT_io_menu]
+class PN_MT_builtin_func_menu(MenuTemplate):
+    bl_idname = "PN_MT_builtin_func_menu"
+    bl_label = "Builtin Functions Menu"
+    text = "Builtin Functions"
+    icon = "LINENUMBERS_ON"
+    register_nodes = nodes.buitlin_func.register_class
+
+inner_menues = [PN_MT_builtin_values_menu, PN_MT_basic_math_menu, PN_MT_io_menu, PN_MT_builtin_func_menu]
 register_class = inner_menues
 
 def register():

@@ -10,6 +10,7 @@ bl_info = {
 }
 
 
+
 from . import register_manager
 
 def register():
